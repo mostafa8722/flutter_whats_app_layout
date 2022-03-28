@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_whats_app/pages/homeScreen.dart';
+import 'package:flutter_whats_app/pages/splashScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +27,12 @@ class MyApp extends StatelessWidget {
         fontFamily: "VazirBold",
       ),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+
+      initialRoute: "/splash",
+      routes:{
+        "/splash" : (context) => new SplashScreen() ,
+        "/" :(context) =>  new HomeScreen()
+      },
     );
 
   }
