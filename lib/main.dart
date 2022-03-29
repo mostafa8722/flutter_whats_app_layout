@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_whats_app/pages/animationScreen.dart';
 import 'package:flutter_whats_app/pages/homeScreen.dart';
 import 'package:flutter_whats_app/pages/splashScreen.dart';
 
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "/splash",
       routes:{
         "/splash" : (context) => new SplashScreen() ,
-        "/" :(context) =>  new HomeScreen()
+        "/" :(context) =>  new HomeScreen(),
+        "/anim" :(context) =>  new AnimationScreen()
       },
     );
 

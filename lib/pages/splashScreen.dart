@@ -11,11 +11,12 @@ class SplashScreen extends StatefulWidget{
 }
 class _SplashState extends State<SplashScreen> {
   _startTimer(){
-  var _duration  = new Duration(seconds: 20);
+  var _duration  = new Duration(seconds:4);
   return new Timer(_duration, callback);
 
   }
   callback(){
+    //Navigator.of(context).pushNamed("/anim");
     Navigator.of(context).pushNamed("/");
   }
 
